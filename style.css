@@ -1,0 +1,97 @@
+/* Add you CSS here */
+
+/* Set a simple green background color and font for the whole page */
+body {
+  background-color: #a8e6a3; /* Light green background */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center; /* This centers all text and inline-block elements */
+}
+
+/* Center the profile section (name and picture) */
+.profile-section {
+  margin-top: 30px;
+}
+
+/* Make the profile picture round and centered */
+.profile-picture img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Makes the image round */
+  border: 3px solid #ffe4ec;
+  display: block; /* Makes the image a block element */
+  margin-left: auto; /* Centers the image horizontally */
+  margin-right: auto;
+}
+
+/* Center the biography section */
+.bio {
+  margin: 20px auto 0 auto; /* Adds space above and centers the box */
+  background-color: #ffe4ec; /* Soft grey background for the box */
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px; /* Sets a fixed width for centering */
+  box-sizing: border-box;
+}
+
+/* Center the skills section */
+.skills {
+  margin: 20px auto 0 auto;
+  background-color: #ffe0b2; /* Soft grey background for the box */
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px; /* Sets a fixed width for centering */
+  box-sizing: border-box;
+}
+
+/* Style the skills list */
+.skills ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  text-align: left; /* Aligns list items to the left inside the centered box */
+}
+
+/* Style for headings */
+h1, h2 {
+  color: #333;
+}
+
+/* Icon row styling */
+.icon-row {
+  display: flex;              /* Use flex to center content horizontally */
+  justify-content: center;    /* Center the icons horizontally */
+  align-items: center;        /* Center the icons vertically */
+  margin-top: 30px;           /* Moved icons up by reducing top margin from 15px to 10px */
+  margin-bottom: 30px;        /* Space below the icons */
+}
+
+/* Style the icons to be larger and spaced out */
+.icon-row .material-icons {
+  font-size: 32px;      /* Make icons bigger */
+  margin: 0 10px;       /* Space between icons */
+  vertical-align: middle;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.icon-row .material-icons:hover {
+  color: #388e3c; /* Change color on hover for effect */
+}
+
+/* Make sure icon links keep the same color as the icons and don't show underline */
+.icon-row a {
+  color: inherit;           /* Inherit the color from the parent (keeps icon color) */
+  text-decoration: none;    /* Removes underline from links */
+}
+
+/* Add a thin rectangle box behind the icon row */
+.icon-row-box {
+  background-color: #b3e5fc; /* Baby blue background */
+  border-radius: 8px;        /* Rounded corners */
+  width: 320px;              /* Same width as other boxes */
+  margin: 40px auto 0 auto;  /* Center and add space above */
+  padding: 10px 0;           /* Thin box: top and bottom padding only */
+  box-sizing: border-box;    /* Include padding in width */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07); /* Soft shadow for depth */
+}
